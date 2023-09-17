@@ -98,10 +98,13 @@ body {
     font-weight: 200;
     transition: color 0.2s, font-size 0.2s, font-weight 0.2s;
 }
-.ph-nav {
-    display: none;
+.nav {
+    display: block;
     margin-left: 50px;
     font-family: 'Pacifico';
+}
+.ph-nav {
+    display: none;
 }
 .jumbotron {
     border-top: 10px solid transparent;
@@ -413,10 +416,19 @@ body {
     .about-img {
         display: none;
     }
+    .box .overlay {
+        opacity: 0.75;
+    }
+    .modal-text {
+        font-weight: 900;
+    }
 }
 @media (max-width: 992px) {
     .jumbotitle {
         font-size: 50px !important;
+    }
+    .main-nav {
+        display: none;
     }
     .ph-nav {
         display: block;
@@ -488,5 +500,11 @@ body {
     }
     .about-img {
         display: none;
+    }
+    .box .overlay {
+        opacity: 0.75;
+    }
+    .modal-text {
+        font-weight: 900;
     }
 }
