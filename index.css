@@ -1,0 +1,492 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans';
+    min-height: 200vh;
+    background-color: #06080F !important;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.logo-mobile {
+    display: none;
+}
+.slideanim {
+    visibility:hidden;
+}
+.ph-resume {
+    display: none;
+}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
+.logo {
+    height: 100px; 
+    width: 100px;
+}
+.logo:hover {
+    height: 110px; 
+    width: 110px;
+    transition: height 0.2s, width 0.2s;
+}
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 0;
+    line-height: 1.42857143;
+    letter-spacing: 2px;
+    border-radius: 0;
+    font-family: 'Krona One';
+    background-color: transparent !important;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+.navbar-default{
+    transition:500ms ease;
+    color: #fff;
+}
+.navbar-default.scrolled{
+    background-color: #fff;
+    color: transparent !important;
+    box-shadow: 5px 0px 20px rgba(0,0,0, .2);
+}
+.navbar li .nav-link, .navbar .navbar-brand {
+    font-size: 14px; 
+    font-family: 'Krona One'; 
+    color: #fff !important;
+}
+.navbar-nav li .nav-link:hover, .navbar-nav li.active .nav-link {
+    color: #fff ;
+    font-size: 16px;
+    font-weight: 200;
+    transition: color 0.2s, font-size 0.2s, font-weight 0.2s;
+}
+.ph-nav {
+    display: none;
+    margin-left: 50px;
+    font-family: 'Pacifico';
+}
+.jumbotron {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("contents/images/Analytics_KPIs_Stats.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+.jumbotitle {
+    font-family:"Montserrat";
+    font-size: 80px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.abouttitle {
+    font-family: 'Montserrat';
+    padding: 2.5%;
+    color: #000;
+    font-size: 30px;
+}
+.aboutlogoresume {
+    width: 40px; 
+    height: 40px;
+}
+.aboutlogos {
+    width: 100px; 
+    height: 90px; 
+    text-align: center;
+}
+.logostext {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #fff;
+}
+.codingtitle {
+    color: #4CAF50;
+    padding-left: 80px; 
+    font-size: 25px; 
+    font-family: monospace;
+}
+.codingtext {
+    padding-left: 80px;
+}
+.designtitle {
+    color: #4CAF50;
+    padding-right: 80px; 
+    font-size: 27px; 
+    font-family: 'Sofia'; 
+    text-align: end;
+}
+.designtext {
+    padding-right: 80px; 
+    text-align: end;
+}
+.skill {
+    padding-left: 120px; 
+    padding-right: 60px;
+}
+.bartitle {
+    font-size: 25px; 
+    text-align: center;
+    color: #000;
+}
+.bartext {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #000;
+}
+.star {
+    padding-right: 60px;
+}
+.checked {
+    color: #03A8F3;
+}
+.unchecked {
+    color: #FFFFFF;
+}
+.portfolio:hover .about {
+    display: contents;
+    transition: display 0.5s;
+}
+.maintitle {
+    font-size: 24px;
+    color: #37BC33;
+}
+.maintext {
+    font-family: 'Lato';
+    font-size: 24px;
+}
+.projtitle {
+    color: #4CAF50;
+    font-family: 'Krona One';
+    font-size: 30px;
+}
+.projtext {
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 24px;
+}
+.codingtext {
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 20px;
+}
+.designtext {
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 20px;
+}
+.dataproj {
+    background-color: #000000;
+    padding: 2.5%;
+}
+.webproj {
+    padding: 2.5%;
+}
+.modal-title {
+    color: #fff;
+    font-family: 'Cinzel';
+    font-size: 40px;
+}
+.modal-text {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+.accordion {
+    --bs-accordion-active-bg: #000;
+}
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #000;
+}
+.panel-heading a:not(.collapsed) {
+    border-bottom:1px solid #000;
+}
+.accordion-item {
+    background-color: #000 !important;
+}
+.accordion-body {
+    background-color:black !important;
+}
+.social-logo {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    margin: 10px;
+}
+.social-logo:hover {
+    height: 80px;
+    width: 80px;
+    transition: height 0.2s, width 0.2s;
+}
+.image-logo {
+    position: block;
+    max-height: 100px;
+    max-width: 100px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.images {
+    position: block;
+    width: 100%;
+    height: 100% !important;
+    max-height: 250px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+}
+.box {
+    position: relative;
+    height: 100%;
+}
+.box:hover .overlay {
+    opacity: 0.75;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lato';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.ExperienceModal3 .modal-content {
+    background: url('contents/images/ra-back.jpg');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.ExperienceModal2 .modal-content {
+    background: url('contents/images/ra-back.jpg');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.ExperienceModal1 .modal-content {
+    background: url('contents/images/capg-pune.jpg');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.ProjectModal7 .modal-content {
+    background: transparent !important;
+    backdrop-filter: blur(20px) !important;
+}
+.ProjectModal6 .modal-content {
+    background: transparent !important;
+    backdrop-filter: blur(20px) !important;
+}
+.ProjectModal5 .modal-content {
+    background: transparent !important;
+    backdrop-filter: blur(20px) !important;
+}
+.ProjectModal4 .modal-content {
+    background: transparent !important;
+    backdrop-filter: blur(20px) !important;
+}
+.ProjectModal3 .modal-content {
+    background: transparent !important;
+    backdrop-filter: blur(20px) !important;
+}
+.ProjectModal2 .modal-content {
+    background: transparent !important;
+    backdrop-filter: blur(20px) !important;
+}
+.ProjectModal1 .modal-content {
+    background: transparent !important;
+    backdrop-filter: blur(20px) !important;
+}
+.modal-content {
+    backdrop-filter: 10px;
+}
+.btn-primary {
+    border: transparent;
+    background-color: transparent;
+    color: #000000;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ft {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+.ft:hover {
+    width: 60px;
+    height: 60px;
+    transition: height 0.2s, width 0.2s;
+}
+@media (max-width: 1400px) {   
+    .port-title {
+        color: #ffffff;
+    }
+    .portexp {
+        color: #ffffff;
+    }
+    .counter-port {
+        font-size: 40px;
+        color: #ffffff;
+    }
+    .footlink {
+        display: none;
+    }
+    .port-pc {
+        display: none;
+    }
+    .port-ph {
+        display: block;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .about-img {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .jumbotitle {
+        font-size: 50px !important;
+    }
+    .ph-nav {
+        display: block;
+        font-family: 'Pacifico' !important;
+        font-size: 35px !important;
+    }
+    .ph-link {
+        padding-left: 30px;
+    }
+    .ind-link {
+        padding-top: 10px;
+    }
+    .aboutlogos {
+        width: 70px; 
+        height: 60px; 
+        text-align: center;
+    }
+    .logostext {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        color: #ffffff;
+    }
+    .codingtitle {
+        padding-left: 30px !important; 
+        font-size: 20px !important; 
+    }
+    .codingtext {
+        padding-left: 18px !important;
+        font-size: 16px !important;
+    }
+    .designtitle {
+        padding-right: 15px !important; 
+        font-size: 22px !important; 
+    }
+    .designtext {
+        padding-right: 20px !important;
+        font-size: 16px !important; 
+    }
+    .bartitle {
+        font-size: 18px !important; 
+    }
+    .bartext {
+        font-size: 16px !important;
+    }
+    .counter-heading {
+        font-size: 18px !important;
+    }
+    .counter-count {
+        font-size: 50px !important;
+    }
+    .counter-text {
+        font-size: 75px !important;
+    }
+    .stats {
+        border: 0px transparent !important;
+    }
+    .skill {
+        padding-left: 20px !important; 
+        padding-right: 20px !important;
+    }
+    .modal-title {
+        color: #000;
+    }
+    .modal-text {
+        color: #000;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .about-img {
+        display: none;
+    }
+}
